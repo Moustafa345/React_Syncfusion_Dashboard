@@ -114,7 +114,7 @@ const App = () => {
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
             </div>
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </div>
       </BrowserRouter>
