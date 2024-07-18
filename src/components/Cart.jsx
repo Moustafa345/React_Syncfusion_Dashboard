@@ -1,4 +1,3 @@
-import React, {useEffect} from "react";
 import { MdOutlineCancel } from "react-icons/md";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { useStateContext } from "../contexts/ContextProvider";
@@ -6,12 +5,7 @@ import { cartData } from "../data/dummy";
 import { Button } from ".";
 
 const Cart = () => {
-  const { handleClick, currentColor } = useStateContext();
-
-  useEffect(()=> {
-    console.log('Clicked');
-  },[handleClick])
-
+  const { currentColor } = useStateContext();
   return (
     <div className="bg-half-transparent w-full fixed nav-item top-0 right-0 ">
       <div className="float-right h-screen  duration-1000 ease-in-out dark:text-gray-200 transition-all dark:bg-[#484B52] bg-white md:w-400 p-8">
