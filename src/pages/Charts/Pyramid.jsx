@@ -10,7 +10,7 @@ import {
   AccumulationDataLabel,
 } from "@syncfusion/ej2-react-charts";
 import { PyramidData } from "../../data/dummy";
-import { Header } from "../../components";
+import { ChartsHeader } from "../../components";
 import { useStateContext } from "../../contexts/ContextProvider";
 
 const Pyramid = () => {
@@ -18,7 +18,7 @@ const Pyramid = () => {
 
   return (
     <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
-      <Header category="Pyramid" title="Food Comparison Chart" />
+      <ChartsHeader category="Pyramid" title="Food Comparison Chart" />
       <div className="w-full">
         <AccumulationChartComponent
           id="charts"

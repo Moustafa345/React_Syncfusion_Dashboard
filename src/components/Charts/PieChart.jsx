@@ -16,7 +16,7 @@ const PieChart = ({ data, legendVisiblity, height }) => {
 
   return (
     <AccumulationChartComponent
-      id="charts"
+      id="pie-chart"
       legendSettings={{ visible: legendVisiblity, background: "white" }}
       height={height}
       background={currentMode === "Dark" ? "#33373E" : "#fff"}
@@ -59,3 +59,4 @@ const PieChart = ({ data, legendVisiblity, height }) => {
 };
 
 export default PieChart;
+
